@@ -1,52 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Desenvolvendo na web</title>
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portifólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center p-5">
 
                 <img id="img-perfil" src="images/perfil.png" alt="">
-                <h1>Desenvolvendo na Web editado</h1>
+                <h1>Desenvolvendo na Web</h1>
                 <p class="text-muted">desenvolvendonaweb@gmail.com</p>
                 <div>
-                    <a href="http://www.google.com" class="rede-social-logo">
+                    <a href="http://www.google.com" class="rede-social-logo" data-toggle="tooltip" data-placement="top" title="Linkedin">
                         <img src="images/linkedin.png">
                     </a>
-                    <a href="http://www.google.com" class="rede-social-logo">
+                    <a href="http://www.google.com" class="rede-social-logo" data-toggle="tooltip" data-placement="top" title="GitHub">
                         <img src="images/github.png">
                     </a>
-                    <a href="http://www.google.com" class="rede-social-logo">
+                    <a href="http://www.google.com" class="rede-social-logo" data-toggle="tooltip" data-placement="top" title="Instagram">
                         <img src="images/instagram.png">
                     </a>
-                    <a href="http://www.google.com" class="rede-social-logo">
+                    <a href="http://www.google.com" class="rede-social-logo" data-toggle="tooltip" data-placement="top" title="Facebook">
                         <img src="images/facebook.png">
                     </a>
                 </div>
             </div>
         </div>
         <div id="sobre" class="row">
-            <div class="col p-5 text-center">
-                <h1>Sobre mim</h1>
-                <p>Página de conteúdo sobre programação web.</p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste voluptatum excepturi nemo cumque voluptatem sequi mollitia doloremque necessitatibus! Consectetur quis reprehenderit consequuntur in maiores veritatis ad, perferendis sunt odio.
-                </p>
+            <div class="col p-5">
+                <div class="container">
+                    <h1>Sobre mim</h1>
+                    <p>Página de conteúdo sobre programação web.</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti iste voluptatum excepturi
+                        nemo cumque voluptatem sequi mollitia doloremque necessitatibus! Consectetur quis reprehenderit
+                        consequuntur in maiores veritatis ad, perferendis sunt odio.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="habilidades" class="row">
             <div class="col text-center p-5">
-                <h1>Habilidades</h1>
-                <div>
-                    <img class="habilidade" src="images/html5.png" alt="">
-                    <img class="habilidade" src="images/css3.png" alt="">
-                    <img class="habilidade" src="images/bootstrap.png" alt="">
+                <div class="container">
+                    <h1>Habilidades</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow border-0 mt-4">
+                                <div class="card-body">
+                                    <img class="habilidade" src="images/html5.png" alt="">
+                                    <h3>HTML5</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow border-0 mt-4">
+                                <div class="card-body">
+                                    <img class="habilidade" src="images/css3.png" alt="">
+                                    <h3>CSS3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow border-0 mt-4">
+                                <div class="card-body">
+                                    <img class="habilidade" src="images/bootstrap.png" alt="">
+                                    <h3>Bootstrap</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,5 +111,13 @@
             <p>&copy; 2021. Todos os direitos reservados.</p>
         </div>
     </div>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
 </body>
+
 </html>

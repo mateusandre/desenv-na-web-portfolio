@@ -1,5 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 #img-perfil{
-    width: 200px;
+    width: 150px;
     border-radius: 100%;
     border: 5px solid #ccc;
 }
@@ -9,6 +12,7 @@
 }
 .rede-social-logo:hover{
     opacity: 0.7;
+    text-decoration: none;
 }
 .rede-social-logo img{
     width: 30px;
@@ -20,6 +24,6 @@
 }
 
 .habilidade{
-    width: 150px;
+    width: 100px;
     margin: 30px;
 }
