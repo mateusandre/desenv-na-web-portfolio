@@ -1,0 +1,25 @@
+#img-perfil{
+    width: 200px;
+    border-radius: 100%;
+    border: 5px solid #ccc;
+}
+
+.rede-social-logo{
+    margin: 5px;
+}
+.rede-social-logo:hover{
+    opacity: 0.7;
+}
+.rede-social-logo img{
+    width: 30px;
+}
+
+#sobre{
+    background-color: #5e17eb;
+    color: #fff;
+}
+
+.habilidade{
+    width: 150px;
+    margin: 30px;
+}
